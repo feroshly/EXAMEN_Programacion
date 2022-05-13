@@ -7,7 +7,12 @@ import java.util.Scanner;
 
 public class VistaAgregacion extends Vista {
 		
-public VistaAgregacion(String título, Scanner scEntrada) {
+/**
+ * Agrega los numeros que introduce el usuario a una lista para cargarlos en pantalla.
+ * @param título
+ * @param scEntrada
+ */
+public VistaAgregacion(String título, Scanner scEntrada, ) {
 	super(título, scEntrada);
 	
 	}
@@ -17,11 +22,9 @@ public VistaAgregacion(String título, Scanner scEntrada) {
 		String texto;
 		Double textoDouble;
 		
-		
 		texto=entrada.nextLine();
 		textoDouble=Double.parseDouble(texto);
 		paraC.add(textoDouble);
 		return paraC;
-	
 	}
 }
